@@ -325,6 +325,7 @@ public class DescriptorsDataModel extends DiagramDataModel<XmlFile> {
             model.setFindAll(true);
             model.setWithSubdirectories(true);
             model.setMultipleFiles(true);
+            model.setFileFilter("*.xml");
             List<UsageInfo> usages = FindInProjectUtil.findUsages(model, PsiManager.getInstance(project).findDirectory(baseDir), project);
 
             List<XmlFile> result = ContainerUtil.mapNotNull(usages, new NullableFunction<UsageInfo, XmlFile>() {
