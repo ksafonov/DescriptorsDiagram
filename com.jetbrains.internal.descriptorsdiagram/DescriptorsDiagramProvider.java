@@ -60,7 +60,7 @@ public class DescriptorsDiagramProvider extends DiagramProvider<XmlFile> {
 
   @Override
   public String getPresentableName() {
-    return "XML descriptors hierarhcy";
+    return "XML descriptors dependencies";
   }
 
   @Override
