@@ -1,0 +1,12 @@
+<idea-plugin version="2">
+    <name>Descriptors Diagram</name>
+    <description>Shows UML diagram of XML descriptors relations</description>
+    <id>descriptorsDiagram</id>
+    <version>1.0</version>
+    <vendor>YourCompany</vendor>
+    <depends >com.intellij.diagram</depends>
+
+    <extensions xmlns="com.intellij">
+        <diagram.Provider implementation="com.jetbrains.internal.descriptorsdiagram.DescriptorsDiagramProvider"/>
+    </extensions>
+</idea-plugin>
