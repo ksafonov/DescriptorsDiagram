@@ -70,4 +70,9 @@ public class DescriptorsDiagramProvider extends DiagramProvider<XmlFile> {
                                                    DiagramPresentationModel presentationModel) {
     return new DescriptorsDataModel(element, this);
   }
+
+    @Override
+    public DiagramScopeManager<XmlFile> createScopeManager(Project project) {
+        return new DiagramPsiScopeManager<XmlFile>(project);
+    }
 }
